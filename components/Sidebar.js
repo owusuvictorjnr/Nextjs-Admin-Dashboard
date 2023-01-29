@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import React from 'react';
-import { RxSketchLogo } from 'react-icons/rx';
+import { RxSketchLogo, RxDashboard, RxPerson } from 'react-icons/rx';
+import { HiOutlineShoppingBag } from 'react-icons/hi';
+import { FiSettings } from 'react-icons/fi';
 
 const Sidebar = ({ children }) => {
   return (
@@ -14,8 +16,26 @@ const Sidebar = ({ children }) => {
           </Link>
           <span className="p-2 border-b-[1px] border-gray-200 w-full"></span>
           <Link href={'/'} className="">
-            <div className="bg-[#f8f9fa] hover:bg-[#e9ecef] text-[#ffffff] p-3 rounded-lg inline-block">
-              <RxSketchLogo size={20} />
+            <div className="bg-[#f8f9fa] hover:bg-[#e9ecef] cursor-pointer mt-4 p-3 rounded-lg inline-block">
+              <RxDashboard size={20} />
+            </div>
+          </Link>
+
+          <Link href={'/student'} className="">
+            <div className="bg-[#f8f9fa] hover:bg-[#e9ecef] cursor-pointer mt-4 p-3 rounded-lg inline-block">
+              <RxPerson size={20} />
+            </div>
+          </Link>
+
+          <Link href={'/registration'} className="">
+            <div className="bg-[#f8f9fa] hover:bg-[#e9ecef] cursor-pointer mt-4 p-3 rounded-lg inline-block">
+              <HiOutlineShoppingBag size={20} />
+            </div>
+          </Link>
+
+          <Link href={'/'} className="">
+            <div className="bg-[#f8f9fa] hover:bg-[#e9ecef] cursor-pointer mt-4 p-3 rounded-lg inline-block">
+              <FiSettings size={20} />
             </div>
           </Link>
         </div>
