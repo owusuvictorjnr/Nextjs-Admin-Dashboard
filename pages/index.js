@@ -1,5 +1,8 @@
 import Head from 'next/head';
 import Header from '@/components/Header';
+import TopCards from '@/components/TopCards';
+import BarChart from '@/components/BarChart';
+import RecentReg from '@/components/RecentReg';
 
 export default function Home() {
   return (
@@ -12,6 +15,13 @@ export default function Home() {
       </Head>
       <main className="bg-[#ffb703] min-h-screen">
         <Header />
+        <TopCards />
+
+        <div className="p-4 grid md:grid-cols-3 grid-cols-1 gap-4">
+          <BarChart />
+
+          <RecentReg />
+        </div>
       </main>
     </>
   );
