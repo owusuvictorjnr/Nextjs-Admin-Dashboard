@@ -1,5 +1,7 @@
+import React from 'react';
+
 const RecentReg = () => {
-  return <div>RecentReg</div>;
+  return <div className="">RecentReg</div>;
 };
 
 export default RecentReg;
